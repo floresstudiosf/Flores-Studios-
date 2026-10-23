@@ -208,6 +208,15 @@
       .floating-contact{right:12px;bottom:12px}.back-top{right:17px;bottom:72px}
     }
     @media(max-width:370px){nav a{padding:8px 7px}.brand{font-size:14px}.brand-logo{width:33px;height:33px}}
+
+    .app-download{padding:34px 0 42px;background:linear-gradient(180deg,rgba(8,11,18,0),rgba(34,240,207,.055));border-top:1px solid var(--border)}
+    .download-panel{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:24px 26px;border:1px solid rgba(34,240,207,.28);border-radius:20px;background:linear-gradient(135deg,rgba(17,23,34,.96),rgba(14,28,35,.94));box-shadow:0 14px 36px rgba(0,0,0,.22)}
+    .download-copy h2{margin:0 0 5px;font-size:clamp(20px,3vw,27px);letter-spacing:-.5px}
+    .download-copy p{margin:0;color:var(--muted);font-size:14px}
+    .download-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:49px;padding:13px 22px;border-radius:12px;background:var(--accent);color:#061412;font-weight:900;letter-spacing:.4px;box-shadow:0 8px 24px rgba(34,240,207,.17);transition:transform .2s,box-shadow .2s;white-space:nowrap}
+    .download-btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(34,240,207,.28)}
+    .download-btn svg{width:20px;height:20px;fill:currentColor}
+    @media(max-width:600px){.download-panel{align-items:stretch;flex-direction:column;padding:20px;gap:16px}.download-btn{width:100%}}
   </style>
 </head>
 <body>
@@ -315,6 +324,21 @@
       </div>
     </section>
   </main>
+
+    <section class="app-download" aria-label="Descargar aplicación FLORES Studios">
+      <div class="container">
+        <div class="download-panel">
+          <div class="download-copy">
+            <h2>📲 Lleva FLORES Studios contigo</h2>
+            <p>Descarga la aplicación para Android desde el enlace oficial.</p>
+          </div>
+          <a class="download-btn" href="https://www.mediafire.com/file/4yf736zvifqwp7y/FLORES+STUDIOS+.apk/file" target="_blank" rel="noopener noreferrer" aria-label="Descargar aplicación FLORES Studios APK">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>
+            DESCARGAR APK
+          </a>
+        </div>
+      </div>
+    </section>
 
   <footer id="redes">
     <div class="container footer-inner">
